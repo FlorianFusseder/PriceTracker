@@ -1,0 +1,41 @@
+li a {
+    color: green;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+header {
+    height: 152px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+    background-color: transparent;
+}
+
+.sidenav .user-view .signature {
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+

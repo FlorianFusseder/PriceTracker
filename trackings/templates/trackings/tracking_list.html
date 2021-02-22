@@ -1,0 +1,19 @@
+{% extends 'base/base.html' %}
+{% load materializecss %}
+
+{% block title %}Tracking list{% endblock %}
+{% block title-header %}Tracking list{% endblock %}
+
+{% block content %}
+{% load static %}
+
+{% if tracking_list %}
+<ul>
+    {% for tracking in tracking_list %}
+    {{ tracking.url}}
+    {% endfor %}
+</ul>
+{% else %}
+<p>No Trackings are available.</p>
+{% endif %}
+{% endblock %}

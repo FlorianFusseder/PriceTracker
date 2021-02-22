@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.generic.list import ListView
+
+from trackings.models import Tracking
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+class IndexView(ListView):
+    model = Tracking
